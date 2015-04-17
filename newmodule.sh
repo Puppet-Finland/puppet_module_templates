@@ -48,4 +48,4 @@ fi
 cp -a ${TEMPLATEDIR}/* "${MODULEDIR}"
 find ${MODULEDIR} -type f -exec sed -i s/"__MODULENAME__"/"${MODULENAME}"/g {} +
 
-echo "New module of type ${TEMPLATE} created to ${MODULEDIR}"
+echo "New module of type ${TEMPLATEDIR} created to ${MODULEDIR}"
