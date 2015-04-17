@@ -29,6 +29,7 @@ fi
 
 if ! [ -r "${TEMPLATEDIR}" ]; then
     echo "ERROR: Template directory ${TEMPLATEDIR} does not exist!"
+    exit 1
 fi
 
 MODULEDIR="../${MODULENAME}"
