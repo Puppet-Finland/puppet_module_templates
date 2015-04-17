@@ -1,0 +1,11 @@
+{
+  "name": "puppetfinland-__MODULENAME__",
+  "version": "0.1.0",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Setup __MODULENAME__",
+  "source": "https://github.com/Puppet-Finland/__MODULENAME__.git",
+  "project_page": "https://github.com/Puppet-Finland/__MODULENAME__",
+  "dependencies": [
+  ]
+}
