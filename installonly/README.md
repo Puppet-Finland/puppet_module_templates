@@ -1,4 +1,4 @@
-# pump
+# modulename
 
 A Puppet module for managing modulename
 
