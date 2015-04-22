@@ -1,10 +1,10 @@
 # pump
 
-A Puppet module for managing __MODULENAME__
+A Puppet module for managing modulename
 
 # Module usage
 
-* [Class: __MODULENAME__](manifests/init.pp)
+* [Class: modulename](manifests/init.pp)
 
 # Dependencies
 

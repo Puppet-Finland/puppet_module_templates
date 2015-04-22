@@ -1,16 +1,16 @@
-# == Class: __MODULENAME__
+# == Class: modulename
 #
-# This class sets up __MODULENAME__
+# This class sets up modulename
 #
 # Currently functionality is limited to installing or removing the package.
 #
 # == Parameters
 #
 # [*manage*]
-#   Whether to manage __MODULENAME__ using Puppet. Valid values 'yes' (default) and 
+#   Whether to manage modulename using Puppet. Valid values 'yes' (default) and 
 #   'no'.
 # [*ensure*]
-#   Status of __MODULENAME__. Valid values 'present' (default) and 'absent'.
+#   Status of modulename. Valid values 'present' (default) and 'absent'.
 #
 # == Authors
 #
@@ -20,17 +20,17 @@
 #
 # BSD-license. See file LICENSE for details.
 #
-class __MODULENAME__
+class modulename
 (
     $manage = 'yes',
     $ensure = 'present'
 
-) inherits __MODULENAME__::params
+) inherits modulename::params
 {
 
 if $manage == 'yes' {
 
-    class { '__MODULENAME__::install':
+    class { '::modulename::install':
         ensure => $ensure,
     }
 }

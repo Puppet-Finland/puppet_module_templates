@@ -7,7 +7,7 @@ A repository for Puppet module templates
 This repository should be cloned to the Puppet module directory or it will not 
 operate correctly. Each directory in this repository should be a valid Puppet 
 module directory, with the module name replaced with the string 
-\_\_MODULENAME\_\_.
+"modulename".
 
 To create a new module from a template use newmodule.sh:
 
@@ -21,4 +21,4 @@ To create a new module from a template use newmodule.sh:
         ./newmodule.sh daemon dhclient"
 
 The newmodule.sh script copies the template module to ".." and renames all 
-instances of \_\_MODULENAME\_\_ with the module name supplied by the user.
+instances of "modulename" with the module name supplied by the user.

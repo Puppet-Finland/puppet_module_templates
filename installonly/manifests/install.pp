@@ -1,14 +1,14 @@
-# == Class: __MODULENAME__::install
+# == Class: modulename::install
 #
-# This class installs __MODULENAME__
+# This class installs modulename
 #
-class __MODULENAME__::install
+class modulename::install
 (
     $ensure
 
-) inherits __MODULENAME__::params
+) inherits modulename::params
 {
-    package { $::__MODULENAME__::params::package_name:
+    package { $::modulename::params::package_name:
         ensure => $ensure,
     }
 }

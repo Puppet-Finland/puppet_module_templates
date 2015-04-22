@@ -46,6 +46,6 @@ fi
 
 # Parameters seem sane, continue...
 cp -a ${TEMPLATEDIR}/* "${MODULEDIR}"
-find ${MODULEDIR} -type f -exec sed -i s/"__MODULENAME__"/"${MODULENAME}"/g {} +
+find ${MODULEDIR} -type f -exec sed -i s/"modulename"/"${MODULENAME}"/g {} +
 
 echo "New module of type ${TEMPLATEDIR} created to ${MODULEDIR}"
