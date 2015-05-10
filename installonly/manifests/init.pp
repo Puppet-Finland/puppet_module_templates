@@ -7,8 +7,8 @@
 # == Parameters
 #
 # [*manage*]
-#   Whether to manage modulename using Puppet. Valid values 'yes' (default) and 
-#   'no'.
+#   Whether to manage modulename using Puppet. Valid values are 'yes' (default) 
+#   and 'no'.
 # [*ensure*]
 #   Status of modulename. Valid values 'present' (default) and 'absent'.
 #
