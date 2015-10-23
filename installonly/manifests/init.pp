@@ -7,8 +7,8 @@
 # == Parameters
 #
 # [*manage*]
-#   Whether to manage modulename using Puppet. Valid values are 'yes' (default) 
-#   and 'no'.
+#   Whether to manage modulename using Puppet. Valid values are true (default) 
+#   and false.
 # [*ensure*]
 #   Status of modulename. Valid values are 'present' (default) and 'absent'.
 #
@@ -22,14 +22,16 @@
 #
 class modulename
 (
-    $manage = 'yes',
+    $manage = true,
     $ensure = 'present'
 
 ) inherits modulename::params
 {
 
-if $manage == 'yes' {
+validate_bool($manage)
+validate_re("${ensure}", '^(present|absent)$')
 
+if $manage {
     class { '::modulename::install':
         ensure => $ensure,
     }
