@@ -8,12 +8,15 @@ class modulename::params {
     case $::osfamily {
         'RedHat': {
             $package_name = 'modulename'
+            $package_provider = undef
         }
         'Debian': {
             $package_name = 'modulename'
+            $package_provider = undef
         }
         'windows': {
             $package_name = 'modulename'
+            $package_provider = 'chocolatey'
         }
 
         default: {

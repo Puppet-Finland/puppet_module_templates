@@ -9,6 +9,7 @@ class modulename::install
 ) inherits modulename::params
 {
     package { $::modulename::params::package_name:
-        ensure => $ensure,
+        ensure   => $ensure,
+        provider => $::modulename::params::package_provider,
     }
 }
