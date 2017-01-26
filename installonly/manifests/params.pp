@@ -12,6 +12,10 @@ class modulename::params {
         'Debian': {
             $package_name = 'modulename'
         }
+        'windows': {
+            $package_name = 'modulename'
+        }
+
         default: {
             fail("Unsupported OS: ${::osfamily}")
         }
