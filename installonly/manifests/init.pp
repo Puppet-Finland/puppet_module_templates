@@ -22,14 +22,11 @@
 #
 class modulename
 (
-    $manage = true,
-    $ensure = 'present'
+    Boolean                  $manage = true,
+    Enum['present','absent'] $ensure = 'present'
 
 ) inherits modulename::params
 {
-
-validate_bool($manage)
-validate_re("${ensure}", '^(present|absent)$')
 
 if $manage {
     class { '::modulename::install':
