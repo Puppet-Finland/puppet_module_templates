@@ -1,0 +1,14 @@
+{
+  "name": "puppetfinland-modulename",
+  "version": "0.1.0",
+  "author": "Puppet-Finland team",
+  "license": "BSD license",
+  "summary": "Setup modulename",
+  "source": "https://github.com/Puppet-Finland/puppet-modulename.git",
+  "project_page": "https://github.com/Puppet-Finland/puppet-modulename",
+  "dependencies": [
+    { "name": "puppetfinland/monit", "version_requirement": ">= 0.5.0" },
+    { "name": "puppetfinland/os", "version_requirement": ">= 0.5.7" },
+    { "name": "puppetfinland/systemd", "version_requirement": ">= 0.1.0" }
+  ]
+}

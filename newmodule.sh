@@ -13,7 +13,7 @@ usage() {
     echo "EXAMPLES"
     echo ""
     echo "    ./newmodule.sh installonly zsh"
-    echo "    ./newmodule.sh daemon dhclient"
+    echo "    ./newmodule.sh monitonly zookeeper"
 }
 
 

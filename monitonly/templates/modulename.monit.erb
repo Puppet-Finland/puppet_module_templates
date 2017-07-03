@@ -1,0 +1,7 @@
+### THIS FILE IS MANAGED BY PUPPET. ANY MANUAL CHANGES WILL GET OVERWRITTEN.
+
+check process modulename with pidfile <%= scope['modulename::params::pidfile'] %>
+   start program = "<%= scope['modulename::params::service_start'] %>"
+   stop program = "<%= scope['modulename::params::service_stop'] %>"
+   alert <%= scope['modulename::monit::monitor_email'] %> with reminder on 480 cycles
+
